@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sponsors",
+  "info": {
+    "singularName": "sponsor",
+    "pluralName": "sponsors",
+    "displayName": "Sponsor"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Company": {
+      "type": "string",
+      "required": true
+    },
+    "Website": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Entertainment Partner",
+        "Banking Sponsor",
+        "Presenting Sponsor",
+        "Automobile Partner"
+      ],
+      "required": true
+    }
+  }
+}
